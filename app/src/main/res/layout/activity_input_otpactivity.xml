@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.InputOTPActivity"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/otpAnimation"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            app:lottie_rawRes="@raw/otp_animation"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true">
+
+        </com.airbnb.lottie.LottieAnimationView>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/t2"
+        android:layout_width="271dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:inputType="phone"
+        android:hint="Masukkan kode OTP"
+        android:textSize="20sp"
+        android:background="@drawable/edt_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384" />
+
+        <TextView
+            android:id="@+id/countText"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/t1"
+            android:fontFamily="@font/roboto"/>
+
+        <TextView
+            android:id="@+id/hubungiAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="0dp"
+            android:textAlignment="center"
+            android:text="" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_circle_bg"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/dark_blue"
+        android:text="Verifikasi"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.248"
+        android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/kirimUlang"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/kirim_ulang_button"
+            android:text="Kirim ulang"
+            android:textColor="@color/dark_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.248"
+             />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

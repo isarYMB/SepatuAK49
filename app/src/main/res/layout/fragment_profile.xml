@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".fragments.ProfileFragment">
+
+    <LinearLayout
+        android:id="@+id/no_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/no_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            android:layout_marginLeft="-17dp"
+            android:layout_gravity="center_horizontal"
+            app:lottie_rawRes="@raw/no_account" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Anda Belum Login"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="center"
+                android:text="Silahkan menekan tombol login di bawah"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/login_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_circle_bg"
+                android:backgroundTint="@color/dark_blue"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="#FFC344"
+                android:textSize="17dp"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/profile_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/lyt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="25dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/namaAkun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="60dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Person Name"
+                                android:textColor="@color/dark_blue"
+                                android:textSize="20dp"
+                                android:gravity="center_horizontal"/>
+
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/alamatAkun"
+                                android:orientation="horizontal"
+                                android:layout_below="@+id/name">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:background="@drawable/ic_place"
+                                    android:backgroundTint="@color/dark_blue"
+                                    android:layout_marginTop="3dp"/>
+
+                                <TextView
+                                    android:layout_marginLeft="10dp"
+                                    android:id="@+id/alamat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_light"
+                                    android:textColor="@color/dark_blue"
+                                    android:textSize="15dp"
+                                    android:text="Alamat Belum Diatur"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_below="@+id/name"/>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_below="@+id/alamatAkun"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="25dp"
+                                android:layout_marginLeft="30dp">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:background="@drawable/ic_telephone"
+                                    android:backgroundTint="@color/dark_blue"
+                                    android:layout_marginTop="3dp"/>
+
+                                <TextView
+                                    android:id="@+id/nomor_telepon"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:fontFamily="@font/roboto_light"
+                                    android:text="Telepon Belum Diatur"
+                                    android:textColor="@color/dark_blue"
+                                    android:textSize="15dp" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/photo"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:src="@drawable/profile"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Akun"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="18dp" />
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/edit_nama"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginRight="30dp"-->
+<!--                    app:cardCornerRadius="15dp"-->
+<!--                    app:cardUseCompatPadding="true">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:padding="15dp">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="24dp"-->
+<!--                            android:fontFamily="@font/roboto"-->
+<!--                            android:text="Username"-->
+<!--                            android:textColor="@color/dark_blue"-->
+<!--                            android:textSize="15dp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/username"-->
+<!--                            android:layout_width="200dp"-->
+<!--                            android:layout_height="24dp"-->
+<!--                            android:layout_alignParentEnd="true"-->
+<!--                            android:fontFamily="@font/roboto"-->
+<!--                            android:text="Atur Username"-->
+<!--                            android:textColor="@color/grey_500"-->
+<!--                            android:gravity="right"-->
+<!--                            android:textSize="15dp"-->
+<!--                            app:autoSizeTextType="uniform"/>-->
+
+<!--&lt;!&ndash;                        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:id="@+id/arrow1"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="24dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="24dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_alignParentRight="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:src="@drawable/ic_arrow" />&ndash;&gt;-->
+
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="Email"
+                            android:layout_marginTop="1dp"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/email"
+                            android:layout_width="230dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:fontFamily="@font/roboto"
+                            android:text="Atur Sekarang"
+                            android:textColor="@color/grey_500"
+                            android:textSize="13dp"
+                            android:gravity="right"
+                            android:layout_weight="1"
+                            android:layout_marginTop="2dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:scrollHorizontally="false"/>
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/arrow2"-->
+<!--                            android:layout_width="24dp"-->
+<!--                            android:layout_height="24dp"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:src="@drawable/ic_arrow" />-->
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/edt_alamat_profil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="Alamat"
+                            android:layout_marginTop="1dp"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:layout_toLeftOf="@+id/arrow3"
+                            android:fontFamily="@font/roboto"
+                            android:text="Atur Alamat"
+                            android:textColor="@color/grey_500"
+                            android:layout_marginTop="2dp"
+                            android:textSize="13dp" />
+
+                        <ImageView
+                            android:id="@+id/arrow3"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_arrow" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/edt_nomor_profil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="Nomor Telepon"
+                            android:layout_marginTop="1dp"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:layout_toLeftOf="@+id/arrow4"
+                            android:fontFamily="@font/roboto"
+                            android:text="Atur Nomor"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/grey_500"
+                            android:textSize="13dp" />
+
+                        <ImageView
+                            android:id="@+id/arrow4"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_arrow" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Log Out"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="18dp" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/log_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginBottom="100dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="Keluar"
+                            android:layout_marginTop="1dp"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:layout_toLeftOf="@+id/arrow6"
+                            android:fontFamily="@font/roboto"
+                            android:text="Keluarkan Akun"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/grey_500"
+                            android:textSize="13dp" />
+
+                        <ImageView
+                            android:id="@+id/arrow6"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_arrow" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

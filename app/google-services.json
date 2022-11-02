@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "432190414131",
+    "project_id": "sepatu-ak49-3efb1",
+    "storage_bucket": "sepatu-ak49-3efb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432190414131:android:d91d82117ad50ef7477246",
+        "android_client_info": {
+          "package_name": "com.hp.ali.ecomerceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432190414131-ifb5qbil3v1fnr2quae9l6talafonr2m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hp.ali.ecomerceapp",
+            "certificate_hash": "54382001394fbfb3110aa5bcaef9a240c5670f1e"
+          }
+        },
+        {
+          "client_id": "432190414131-icqoltp0m3tmfjeu5t268mtqriu03ua5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIDPX8HiWE4HRfQRP1t6ET7ZMWVFg30PA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432190414131-icqoltp0m3tmfjeu5t268mtqriu03ua5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mig35:carousellayoutmanager:1.4.6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e57a941aa055eca152559ba07d4e1ba/jetified-carousellayoutmanager-1.4.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e57a941aa055eca152559ba07d4e1ba/jetified-carousellayoutmanager-1.4.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e57a941aa055eca152559ba07d4e1ba/jetified-carousellayoutmanager-1.4.6/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mig35/carousellayoutmanager/1.4.6/762840d958f86da43cc487f7928e81647c7df7f4/carousellayoutmanager-1.4.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mig35/carousellayoutmanager/1.4.6/1f2cf171369ec108352a488b0722616cac610bcd/carousellayoutmanager-1.4.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

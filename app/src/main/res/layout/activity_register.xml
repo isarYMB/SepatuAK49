@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".login.RegisterActivity">
+
+    <TextView
+        android:id="@+id/txt_screen_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Registrasi"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_screen_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/txt_screen_subtitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_screen_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/create_your_profile"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_screen_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/background"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_screen_subtitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Nama Depan"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edt_firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edt_bg"
+                    android:hint="Nama Depan"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Nama Belakang"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edt_lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edt_bg"
+                    android:hint="Nama Belakang"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/email"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edt_bg"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:id="@+id/txt_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/password"
+                    android:textColor="@color/black" />
+
+                <EditText
+
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edt_bg"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp" />
+
+                <!--                <TextView-->
+                <!--                    android:layout_marginBottom="5dp"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Provinsi"/>-->
+
+                <!--                <EditText-->
+
+                <!--                    android:id="@+id/edt_provinsi"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:background="@drawable/edt_bg"-->
+                <!--                    android:layout_height="50dp"-->
+                <!--                    android:padding="10dp"-->
+                <!--                    android:inputType="text"-->
+                <!--                    android:focusable="false"-->
+                <!--                    android:hint="Provinsi"/>-->
+
+                <!--                <TextView-->
+                <!--                    android:layout_marginBottom="5dp"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Kota"/>-->
+
+                <!--                <EditText-->
+
+                <!--                    android:id="@+id/edt_kota"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:background="@drawable/edt_bg"-->
+                <!--                    android:layout_height="50dp"-->
+                <!--                    android:padding="10dp"-->
+                <!--                    android:inputType="text"-->
+                <!--                    android:focusable="false"-->
+                <!--                    android:hint="Kota"/>-->
+
+                <!--                <TextView-->
+                <!--                    android:layout_marginBottom="5dp"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Alamat Lengkap"/>-->
+
+                <!--                <EditText-->
+
+                <!--                    android:id="@+id/edt_address"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:background="@drawable/edt_bg"-->
+                <!--                    android:layout_height="50dp"-->
+                <!--                    android:padding="10dp"-->
+                <!--                    android:inputType="text"-->
+                <!--                    android:hint="Alamat Lengkap"/>-->
+
+
+                <!--                <TextView-->
+                <!--                    android:layout_marginBottom="5dp"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Kode Pos"/>-->
+
+                <!--                <EditText-->
+
+                <!--                    android:id="@+id/edt_post_code"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:background="@drawable/edt_bg"-->
+                <!--                    android:layout_height="50dp"-->
+                <!--                    android:padding="10dp"-->
+                <!--                    android:inputType="text"-->
+                <!--                    android:hint="Kode Pos"/>-->
+
+
+                <!--                <TextView-->
+                <!--                    android:layout_marginBottom="5dp"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Nomor Telepon WA"/>-->
+
+                <!--                <EditText-->
+
+                <!--                    android:id="@+id/edt_phone_number"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:background="@drawable/edt_bg"-->
+                <!--                    android:layout_height="50dp"-->
+                <!--                    android:padding="10dp"-->
+                <!--                    android:inputType="text"-->
+                <!--                    android:hint="Nomor Telepon WA"/>-->
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_circle_bg"
+                android:backgroundTint="@color/dark_blue"
+                android:text="Buat Akun"
+                android:textColor="@color/white" />
+
+<!--            <TextView
+                android:id="@+id/txt_already_have_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Sudah Punya Akun? Login di sini" />-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

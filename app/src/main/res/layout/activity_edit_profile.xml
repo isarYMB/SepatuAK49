@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.EditProfile">
+    <LinearLayout
+        android:id="@+id/top_toolbar"
+        android:layout_marginLeft="25dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto_bold"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Depan"/>
+
+                <EditText
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/edt_firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:hint="Nama Depan"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/edt_bg"/>
+
+
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Belakang"/>
+
+                <EditText
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/edt_lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:hint="Nama Belakang"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/edt_bg"/>
+
+
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Provinsi"/>
+
+                <EditText
+
+                    android:id="@+id/edt_provinsi"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edt_bg"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:focusable="false"
+                    android:hint="Provinsi"/>
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kota"/>
+
+                <EditText
+
+                    android:id="@+id/edt_kota"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edt_bg"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:focusable="false"
+                    android:hint="Kota"/>
+
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kode Pos"/>
+
+                <EditText
+
+                    android:id="@+id/edt_post_code"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edt_bg"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:hint="Kode Pos"/>
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Lengkap"/>
+
+                <EditText
+
+                    android:id="@+id/edt_address1"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edt_bg"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:hint="Alamat Lengkap"/>
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nomor Telepon WA"/>
+
+                <EditText
+
+                    android:id="@+id/edt_phone_number"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edt_bg"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:hint="Nomor Telepon WA"/>
+
+
+
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/update_profile"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_circle_bg"
+                android:backgroundTint="@color/dark_blue"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Simpan"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

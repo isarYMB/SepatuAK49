@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/a"
+        app:cardCornerRadius="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:id="@+id/lyt_item_pesanan"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/lyt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/gambar_pesanan"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"/>
+                <RelativeLayout
+                    android:layout_marginLeft="9dp"
+                    android:layout_toRightOf="@+id/gambar_pesanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="13dp"
+                        android:id="@+id/brand_pesanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/dark_blue"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="Nike"/>
+
+                    <TextView
+                        android:id="@+id/merek_pesanan"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/brand_pesanan"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/dark_blue"
+                        android:fontFamily="@font/roboto"
+                        android:text="Creative grey chair"/>
+
+
+                    <TextView
+                        android:id="@+id/harga_pesanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/merek_pesanan"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="-1dp"
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:text="Rp. 500k"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E4E1E1"/>
+            <RelativeLayout
+                android:layout_marginTop="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/jumlah_pesanan"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:text="1 Produk"/>
+                <TextView
+                    android:layout_toLeftOf="@+id/total_pesanan"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:textColor="@color/dark_blue"
+                    android:text="Total Pesanan :"/>
+                <TextView
+                    android:id="@+id/total_pesanan"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="@color/dark_blue"
+                    android:text="Total Pesanan"/>
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E4E1E1"/>
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/status_pesanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Selesai"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <Button
+                    android:id="@+id/beli_lagi_pesanan"
+                    android:layout_marginTop="7dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingRight="13dp"
+                    android:paddingLeft="13dp"
+                    android:backgroundTint="@color/dark_blue"
+                    android:textColor="@color/gold"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_circle_bg"
+                    android:text="Verifikasi Ulang"/>
+
+                <TextView
+                    android:id="@+id/terverifikasi"
+                    android:layout_marginTop="7dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gold"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="10dp"
+                    android:text="Terverifikasi"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hp.ali.ecomerceapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" tools:node="replace" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:node="replace" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EcomerceApp"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.TentangAplikasi"></activity>
+        <activity android:name=".activities.KebijakanPrivasi" />
+        <activity android:name=".activities.VerifikasiPesanan" />
+        <activity android:name=".activities.StatusPesanan" />
+        <activity android:name=".activities.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.SwipeActivity" />
+        <activity android:name=".activities.SwipeUkaki" />
+        <activity android:name=".login.InputOTPActivity" />
+        <activity android:name=".login.OTPAuthActivity" />
+        <activity android:name=".activities.EditAlamat" />
+        <activity android:name=".activities.EditProfile" />
+        <activity android:name=".activities.Other"/>
+        <activity android:name=".activities.CartActivity" />
+        <activity android:name=".activities.CheckoutActivity" />
+        <activity android:name=".activities.ProductDetail" />
+        <activity android:name=".login.RegisterActivity" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".login.LogInActivity" />
+
+        <meta-data
+            android:name="com.snapchat.kit.sdk.clientId"
+            android:value="f4cad14a-c276-4d02-9d2e-683e038d044d" />
+        <meta-data
+            android:name="com.snapchat.kit.sdk.redirectUrl"
+            android:value="ecomerceapp://snap-kit/oauth2" />
+        <meta-data
+            android:name="com.snapchat.kit.sdk.scopes"
+            android:resource="@array/snap_connect_scopes" />
+
+        <activity
+            android:name="com.snapchat.kit.sdk.SnapKitActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="snap-kit"
+                    android:path="/oauth2"
+                    android:scheme="ecomerceapp" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+    <queries>
+        <package android:name="com.whatsapp" />
+        <package android:name="com.snapchat.android" />
+    </queries>
+
+</manifest>
