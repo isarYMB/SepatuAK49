@@ -69,9 +69,9 @@ public class HomeFragment extends Fragment {
     CarouselView carouselView;
     ProductsAdapter adapter;
     SessionManager sessionManager;
-    String url1 = "http://192.168.1.5/ECOMMERSE/image/banner/banner_1.png";
-    String url2 = "http://192.168.1.5/ECOMMERSE/image/banner/banner_2.png";
-    String url3 = "http://192.168.1.5/ECOMMERSE/image/banner/banner_3.png";
+    String url1 = "http://192.168.1.8/ECOMMERSE/image/banner/banner_1.png";
+    String url2 = "http://192.168.1.8/ECOMMERSE/image/banner/banner_2.png";
+    String url3 = "http://192.168.1.8/ECOMMERSE/image/banner/banner_3.png";
 
     String[] sampleImages = {
             url1,url2,url3

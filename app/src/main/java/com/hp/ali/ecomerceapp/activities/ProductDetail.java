@@ -187,7 +187,24 @@ public class ProductDetail extends AppCompatActivity {
                     pDialog.setConfirmText("  OKE  ");
                     pDialog.show();
                 }else {
-                    snapCreativeKitApi.send(snapLensContent);
+                    KAlertDialog pDialog = new KAlertDialog(ProductDetail.this);
+                    pDialog.setTitleText("Augmented Reality Sepatu");
+                    pDialog.setContentText("Download dan Login Aplikasi Snapchat Terlebih Dahulu untuk Mencoba Augmented Reality Sepatu ini");
+                    pDialog.setConfirmText("Coba Sepatu");
+                    pDialog.setCancelText("Batal");
+                    pDialog.show();
+                    pDialog.setConfirmClickListener(new KAlertDialog.KAlertClickListener() {
+                        @Override
+                        public void onClick(KAlertDialog kAlertDialog) {
+                            snapCreativeKitApi.send(snapLensContent);
+                        }
+                    });
+                    pDialog.setCancelClickListener(new KAlertDialog.KAlertClickListener() {
+                        @Override
+                        public void onClick(KAlertDialog kAlertDialog) {
+                            pDialog.cancel();
+                        }
+                    });
                 }
             }
         });

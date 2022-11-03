@@ -87,7 +87,7 @@ public class Other extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                if (newText.equals("")){
+                if (newText.equals("Air Jordan One Mid")){
                     productList.clear();
                     loadProduk();
                 }
@@ -106,7 +106,7 @@ public class Other extends AppCompatActivity {
     }
 
     public void searchProduk (String newText){
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, DbContract.SERVER_SEARCH_URL,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, DbContract.SERVER_SEARCH_URL+newText,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

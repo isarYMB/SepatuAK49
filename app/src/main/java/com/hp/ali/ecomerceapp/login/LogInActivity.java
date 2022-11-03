@@ -294,7 +294,7 @@ public class LogInActivity extends AppCompatActivity {
                                 if (resp.equals("true")) {
                                     signOut(nama,email);
                                 }else {
-                                    SignInServer(email,"client160721");
+                                    SignInServer(email,"$2y$10$9QEcaQtJZ80GIPe1w2Ah2uNq9DbXtQcmhy976RYMTHrtOKETEEo1q");
                                 }
                             } catch (JSONException e) {
                                 e.printStackTrace();
@@ -340,7 +340,7 @@ public class LogInActivity extends AppCompatActivity {
                                 String message = jsonObject.getString("message");
                                 String data = jsonObject.getString("data");
                                 if (resp.equals("true")) {
-                                    SignInServer(email,"client160721");
+                                    SignInServer(email,"$2y$10$9QEcaQtJZ80GIPe1w2Ah2uNq9DbXtQcmhy976RYMTHrtOKETEEo1q");
                                 }else {
                                     Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
                                 }
@@ -360,7 +360,7 @@ public class LogInActivity extends AppCompatActivity {
                     params.put("NAMA_DEPAN", nama);
                     params.put("NAMA_BELAKANG", "Belum di atur");
                     params.put("EMAIL", email);
-                    params.put("PASS", "client160721");
+                    params.put("PASS", "$2y$10$9QEcaQtJZ80GIPe1w2Ah2uNq9DbXtQcmhy976RYMTHrtOKETEEo1q");
                     params.put("PROVINSI", "Belum di atur");
                     params.put("KOTA", "Belum di atur");
                     params.put("TAG_KOTA", "Belum di atur");
